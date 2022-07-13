@@ -1,0 +1,218 @@
+/*----Google Fonts----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+:root {
+  /*-----COLORS--------*/
+
+  --first-color: #069c54; /*#114f2d*/ /*FFB3A6*/
+  --first-color-alt: #048654;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #a6a6a6;
+  --body-color: #fbfefd;
+  --container-color: #ffffff;
+
+  /*-----MARGIN AND PADDING--------*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  --mb-6-5: 4.5rem;
+  --mb-7: 6rem;
+
+  /*----FONTS AND TYPOGRAPHY*/
+  --header-height: 3rem;
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*------FONT WEIGHT------*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 813rem;
+  }
+}
+/*====BODY and HTML=====*/
+body {
+  font-family: var(--body-font);
+}
+html {
+  scroll-behavior: smooth;
+}
+/*=====LAYOUT======*/
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem); /*study this*/
+  margin-left: var(--mb-2);
+}
+
+.bd-grid {
+  /*study this*/
+  display: grid;
+  gap: 1.5rem;
+}
+.bd-flex {
+  display: flex;
+}
+
+/*=======CLASS CSS=====*/
+.section {
+  padding: 4rem 0 1rem;
+}
+.section-title,
+.section-subtitle {
+  text-align: initial;
+}
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+  display: block;
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-5);
+  margin-bottom: var(--mb-1);
+  color: #f58634;
+}
+
+/*=====ABOUT SECTION======*/
+
+#about-us {
+  background-color: #1e2e3f;
+}
+.about__data,
+.section-subtitle,
+.section-title {
+  text-align: center;
+}
+
+.about__data {
+  text-align: justify;
+}
+.about__container {
+  margin-top: var(--mb-6);
+}
+.about__img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: var(--mb-2);
+  /*border-radius: 0.5rem;*/
+}
+.about__description {
+  margin-bottom: var(--mb-3);
+  color: #edf0f3;
+  text-align: justify;
+}
+.mopol_approval {
+  justify-content: center;
+}
+.about__icon::before {
+  font-size: 3rem;
+  color: #ffff;
+  padding: var(--mb-1);
+  background-color: #f58634;
+  margin: auto;
+}
+.about__qualification {
+  margin-bottom: auto;
+}
+.qualification__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+  font-weight: var(--font-medium);
+  color: #edf0f3;
+}
+
+/*WHY US SECTION*/
+.whyus__container {
+  justify-content: center;
+}
+
+.whyus__qualification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 4px rgba(3, 74, 40, 0.15);
+  padding: 0.75rem;
+}
+.mission,
+.vision,
+.core__values {
+  max-height: 265px;
+}
+.mission {
+  background-color: #f58634;
+  color: #fbfefd;
+}
+.vision {
+  background-color: #1e2e3f;
+  color: #fbfefd;
+}
+.core__values {
+  background-color: #74b5fc;
+  color: #fbfefd;
+}
+
+.whyus__description {
+  margin-bottom: var(--mb-3);
+  text-align: center;
+  font-size: var(--normal-font-size);
+}
+
+.whyus__title {
+  text-align: center;
+}
+.whyus__icon::before {
+  margin: auto;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: var(--mb-1);
+  background-color: #f58634;
+}
+
+/*MEDIA QUERIES SECTION*/
+@media screen and (min-width: 576px) {
+  .whyus__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .whyus__container {
+    grid-template-columns: repeat(3, 230px);
+    column-gap: 4rem;
+    align-items: center;
+  }
+  .mission,
+  .vission,
+  .core__values {
+    font-size: var(--biggest-font-size);
+  }
+}

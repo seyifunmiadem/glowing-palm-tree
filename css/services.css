@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.custom-shape-divider-top-1622120023 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-top-1622120023 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 194px;
+}
+.custom-shape-divider-top-1622120023 .shape-fill {
+  fill: #ecf5ff;
+}
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1622120023 svg {
+    width: calc(100% + 1.3px);
+    height: 160px;
+  }
+}
+.custom-shape-divider-bottom-1622373807 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1622373807 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+.custom-shape-divider-bottom-1622373807 .shape-fill {
+  fill: #ffffff;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1622373807 svg {
+    width: calc(100% + 1.3px);
+    height: 59px;
+  }
+}
